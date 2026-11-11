@@ -387,9 +387,9 @@ const note_names_questions = [
     {
         type: "image",
         answer_type: "text",
-        image: "assets/note_names/E6.png",
-        correct: "E6",
-        answers: ['E6', 'F5Sharp', 'D 3']
+        image: "assets/note_names/C6.png",
+        correct: "C6",
+        answers: ['C6', 'F5Sharp', 'D 3']
     },
 
     {
@@ -403,9 +403,9 @@ const note_names_questions = [
     {
         type: "image",
         answer_type: "text",
-        image: "assets/note_names/E6Sharp.png",
-        correct: "E6Sharp",
-        answers: ['E6Sharp', 'B2', 'A5Sharp']
+        image: "assets/note_names/C6Sharp.png",
+        correct: "C6Sharp",
+        answers: ['C6Sharp', 'B2', 'A5Sharp']
     },
 
     {
