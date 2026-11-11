@@ -315,14 +315,6 @@ const note_names_questions = [
     {
         type: "image",
         answer_type: "text",
-        image: "assets/note_names/D_3.png",
-        correct: "D 3",
-        answers: ['B1Flat', 'D6Sharp', 'D 3']
-    },
-
-    {
-        type: "image",
-        answer_type: "text",
         image: "assets/note_names/E2.png",
         correct: "E2",
         answers: ['E2', 'G3Flat', 'G3Sharp']
@@ -365,7 +357,7 @@ const note_names_questions = [
         answer_type: "text",
         image: "assets/note_names/E4Flat.png",
         correct: "E4Flat",
-        answers: ['E5', 'D 3', 'E4Flat']
+        answers: ['E5', 'D3Sharp', 'E4Flat']
     },
 
     {
@@ -389,7 +381,7 @@ const note_names_questions = [
         answer_type: "text",
         image: "assets/note_names/C6.png",
         correct: "C6",
-        answers: ['C6', 'F5Sharp', 'D 3']
+        answers: ['C6', 'F5Sharp', 'D3Sharp']
     },
 
     {
@@ -437,7 +429,7 @@ const note_names_questions = [
         answer_type: "text",
         image: "assets/note_names/F3Sharp.png",
         correct: "F3Sharp",
-        answers: ['F3Sharp', 'A2Sharp', 'D 3']
+        answers: ['F3Sharp', 'A2Sharp', 'D3Sharp']
     },
 
     {
@@ -469,7 +461,7 @@ const note_names_questions = [
         answer_type: "text",
         image: "assets/note_names/F5Sharp.png",
         correct: "F5Sharp",
-        answers: ['A1', 'D 3', 'F5Sharp']
+        answers: ['A1', 'D3Sharp', 'F5Sharp']
     },
 
     {
