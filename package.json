@@ -1,5 +1,5 @@
 {
-  "name": "music-match-web",
+  "name": "treble-hour",
   "version": "1.0.0",
   "description": "",
   "main": "questions.js",
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/innakuropatko-hue/music-match.git"
+    "url": "git+https://github.com/innakuropatko-hue/treble-hour.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/innakuropatko-hue/music-match/issues"
+    "url": "https://github.com/innakuropatko-hue/treble-hour/issues"
   },
-  "homepage": "https://github.com/innakuropatko-hue/music-match#readme",
+  "homepage": "https://github.com/innakuropatko-hue/treble-hour#readme",
   "dependencies": {
     "@capacitor/cli": "^8.4.2",
     "@capacitor/core": "^8.4.2",

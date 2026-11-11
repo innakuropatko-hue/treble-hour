@@ -1,7 +1,7 @@
 {
-  "name": "Music Match",
-  "short_name": "Music Match",
-  "start_url": "index.html",
+  "name": "Treble Hour",
+  "short_name": "Treble Hour",
+  "start_url": "game.html",
   "display": "standalone",
   "icons": [
     {
