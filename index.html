@@ -3,86 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treble Hour</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
+    <title>Inna Kuropatko · Music Apps</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+            background: #f7f8fc;
+            color: #2c3e50;
+            line-height: 1.5;
+        }
+        .wrap { max-width: 760px; margin: 0 auto; padding: 56px 20px 40px; }
+        header { text-align: center; margin-bottom: 44px; }
+        header h1 { font-size: 44px; margin: 0 0 8px; }
+        header p { font-size: 19px; color: #666; margin: 0; }
+
+        .play {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+            border-radius: 25px;
+            padding: 36px 32px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+            transition: transform 0.25s;
+            margin-bottom: 44px;
+        }
+        .play:hover { transform: translateY(-4px) scale(1.01); }
+        .play .big { font-size: 34px; font-weight: bold; display: block; }
+        .play .small { font-size: 18px; opacity: 0.92; }
+
+        h2 { font-size: 22px; margin: 0 0 16px; }
+        .apps { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+        .card h3 { margin: 0 0 6px; font-size: 21px; }
+        .card p { margin: 0 0 16px; color: #555; font-size: 16px; }
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .card a:hover { text-decoration: underline; }
+
+        footer { text-align: center; color: #888; margin-top: 52px; font-size: 15px; }
+
+        @media (max-width: 560px) {
+            header h1 { font-size: 34px; }
+            .apps { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-
 <body>
+    <div class="wrap">
+        <header>
+            <h1>🎵 Inna Kuropatko</h1>
+            <p>Music apps and games</p>
+        </header>
 
-    <div class="container">
+        <a class="play" href="game.html">
+            <span class="big">🎼 Play Treble Hour</span>
+            <span class="small">A music quiz game: note values, note names, dynamics, ornaments, ear training and scales</span>
+        </a>
 
-        <h1 id="homeTitle">🎵 Treble Hour</h1>
-        <p id="subtitle">A Music Quiz Game</p>    
-
-        <div class="menu">
-            <button id="noteValuesBtn">🎼 Note Values</button>
-            <button id="noteNamesBtn">🎹 Note Names</button>
-            <button id="dynamicsBtn">🎶 Dynamics</button>
-            <button id="ornamentsBtn">🎺 Ornaments</button>
-            <button id="earTrainingBtn">👂 Ear Training</button>
-            <button id="scalesBtn">♭ Scales</button>
-        </div>
-
-        <div id="earTrainingScreen" style="display:none;">
-            <h1 id="earTrainingTitle">👂🏻 Ear Training</h1>
-            <div class="menu">
-                <button id="singleNotesBtn">🎵 Single Notes</button> 
-                <button id="scaleIdentificationBtn">🎼 Scale Identification</button>
-                <button id="chordsBtn">🎹 Chords</button>
-                <button id="backFromEarTraining">⬅ Back</button>
+        <h2>Apps</h2>
+        <div class="apps">
+            <div class="card">
+                <h3>📖 Гимны Души</h3>
+                <p>Hymns with piano playback and highlighted lyrics and notes.</p>
+                <a href="privacy/gimny-dushi.html">Privacy Policy →</a>
+            </div>
+            <div class="card">
+                <h3>🎹 DuetPartner</h3>
+                <p>Plays the other part so you can practice piano duets.</p>
+                <a href="privacy/duetpartner.html">Privacy Policy →</a>
             </div>
         </div>
 
-        <div id="scalesScreen" style="display:none;">
-            <h1 id="scalesTitle">🎶 Scales</h1>
-            <div class="menu">
-                <button id="chordInversionsBtn">🎹 Chord Inversions</button> 
-                <button id="keySignaturesBtn">🎼 Key Signatures</button>
-                <button id="dominantsBtn">𝄢 Dominant Chords</button>
-                <button id="backFromScales">⬅ Back</button>
-            </div>
-        </div>
-
-        <div id="quizScreen" style="display:none;">
-            <h2 id="questionTitle">Question goes here</h2>
-            <div id="feedbackMessage"></div>
-
-            <img id="questionImage" width="250">
-            <br>
-            <button id="playSoundBtn" class="play-button" style="display:none;">▶ Play Sound</button>
-
-            <div class="audio-container">
-                <audio id="questionSound" controls></audio>
-            </div>
-            <br> 
-
-            <button class="answer-button" id="answer1">Answer 1</button>
-            <button class="answer-button" id="answer2">Answer 2</button>
-            <button class="answer-button" id="answer3">Answer 3</button>
-            
-            <button id="homeBtn" class="home-button">🏠 Home</button>
-        </div>
-
-        <footer id="menuFooter">
-            <div class="creator">Created by Inna Kuropatko 🎵</div>
-        </footer>
-
+        <footer>Created by Inna Kuropatko 🎵</footer>
     </div>
-
-    <script src="web_questions/note_values.js"></script>
-    <script src="web_questions/note_names.js"></script>
-    <script src="web_questions/dynamics.js"></script>
-    <script src="web_questions/ornaments.js"></script>
-    <script src="web_questions/sounds.js"></script>
-    <script src="web_questions/scales.js"></script>
-    <script src="web_questions/chords.js"></script>
-    <script src="web_questions/dominant.js"></script>
-    <script src="web_questions/scale_identification.js"></script>
-    <script src="web_questions/chord_inversions.js"></script>
-    <script src="questions.js"></script>
-    <script src="script.js"></script>
-     
 </body>
 </html>
